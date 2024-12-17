@@ -103,6 +103,11 @@ README.md                 # Project documentation
 <p align="center">
  <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
 </p>
+
+### 6. Person Work
+<p align="center">
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/person_work.png" width="200" />
+</p>
   
 ## ✔️ Demo
 <div align="center">
