@@ -81,14 +81,14 @@ README.md                 # Project documentation
 ## 🌙 UI Screens
 ### 1. Splash
 <p align="center">
- <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/splash.png" width="200" />
 </p>
 
 ### 2. Onboarding
 <p align="center">
- <img src="https://github.com/user-attachments/assets/da514af4-2796-42bd-934f-59326e046a04" width="200" />
- <img src="https://github.com/user-attachments/assets/8c40a21f-43c1-4714-ac47-72832bfac748" width="200" />
- <img src="https://github.com/user-attachments/assets/13f6b75e-7904-486c-8ef8-28b656129d3b" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/onboarding%201.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/onboarding%202.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/onboarding%203.png" width="200" />
 </p>
 
 ### 3. Auth
