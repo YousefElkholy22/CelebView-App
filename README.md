@@ -81,7 +81,7 @@ README.md                 # Project documentation
 ## 🌙 UI Screens
 ### 1. Splash
 <p align="center">
- <img src="[https://github.com/user-attachments/assets/4f73ba27-2de5-4fc5-b0a3-858afae4f9aa](https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/splash.png)" width="200" />
+ <img src="assets/screens/splash.png" width="200" />
 </p>
 
 ### 2. Onboarding
