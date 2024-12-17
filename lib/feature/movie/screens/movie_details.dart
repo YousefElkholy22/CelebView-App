@@ -1,5 +1,5 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/models/famous_person_model.dart';
+import 'package:final_project/apis/models/famous_person_model.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailsScreen extends StatelessWidget {
@@ -92,11 +92,9 @@ class MovieDetailsScreen extends StatelessWidget {
             ),
 
             const SizedBox(height: 20),
-
-            // Overview Header
-            Text(
+            const Text(
               'Overview',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: mediumBlue,

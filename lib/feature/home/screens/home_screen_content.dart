@@ -1,6 +1,6 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/screens/person_image_screen.dart';
-import 'package:final_project/screens/person_work%20_screen.dart';
+import 'package:final_project/feature/person/screens/person_image_screen.dart';
+import 'package:final_project/feature/person/screens/person_work%20_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenContent extends StatelessWidget {

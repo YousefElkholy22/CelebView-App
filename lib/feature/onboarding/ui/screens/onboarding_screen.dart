@@ -1,6 +1,7 @@
-import 'package:final_project/onboarding/data/repo/onboarding_item.dart';
-import 'package:final_project/onboarding/ui/widgets/onboarding_button.dart';
-import 'package:final_project/screens/home_screen.dart';
+import 'package:final_project/core/theming/colors.dart';
+import 'package:final_project/feature/onboarding/data/repo/onboarding_item.dart';
+import 'package:final_project/feature/onboarding/ui/widgets/onboarding_button.dart';
+import 'package:final_project/feature/home/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -75,8 +76,8 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
                     controller: _pageController,
                     count: items.length,
                     effect: const SwapEffect(
-                      activeDotColor: Colors.yellow,
-                      dotColor: Colors.black,
+                      activeDotColor: darkBlue,
+                      dotColor:lightBlue,
                       dotHeight: 12.0,
                       dotWidth: 12.0,
                       spacing: 8.0,

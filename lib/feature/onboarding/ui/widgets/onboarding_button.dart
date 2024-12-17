@@ -1,3 +1,4 @@
+import 'package:final_project/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingeButton extends StatelessWidget {
@@ -8,7 +9,7 @@ class OnBoardingeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(Colors.black),
+        backgroundColor: WidgetStateProperty.all(darkBlue),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         minimumSize: WidgetStateProperty.all(const Size(double.maxFinite, 50)),
         shape: WidgetStateProperty.all(

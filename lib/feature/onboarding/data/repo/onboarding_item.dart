@@ -1,4 +1,4 @@
-import 'package:final_project/onboarding/data/models/onboarding_info.dart';
+import 'package:final_project/feature/onboarding/data/models/onboarding_info.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingItem {

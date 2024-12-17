@@ -1,5 +1,5 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/screens/movie_details.dart';
+import 'package:final_project/feature/movie/screens/movie_details.dart';
 import 'package:flutter/material.dart';
 
 class FavoritesScreen extends StatefulWidget {
@@ -23,7 +23,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
           ? const Center(
               child: Text(
                 'No favorites yet!',
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             )
           : ListView.builder(

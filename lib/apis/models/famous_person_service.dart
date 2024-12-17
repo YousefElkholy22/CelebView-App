@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:final_project/models/famous_person_model.dart';
+import 'package:final_project/apis/models/famous_person_model.dart';
 
 class FamousPersonService {
   var dio = Dio();

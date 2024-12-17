@@ -1,6 +1,6 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/models/famous_person_model.dart';
-import 'package:final_project/screens/movie_details.dart';
+import 'package:final_project/apis/models/famous_person_model.dart';
+import 'package:final_project/feature/movie/screens/movie_details.dart';
 import 'package:flutter/material.dart';
 
 class PersonWorksScreen extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:final_project/onboarding/ui/screens/onboarding_screen.dart';
+import 'package:final_project/feature/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

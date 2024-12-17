@@ -1,8 +1,8 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/models/famous_person_model.dart';
-import 'package:final_project/models/famous_person_service.dart';
-import 'package:final_project/screens/home_screen_content.dart';
-import 'package:final_project/screens/favorites_screen.dart';
+import 'package:final_project/apis/models/famous_person_model.dart';
+import 'package:final_project/apis/models/famous_person_service.dart';
+import 'package:final_project/feature/home/screens/home_screen_content.dart';
+import 'package:final_project/feature/favorites/screens/favorites_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

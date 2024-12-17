@@ -1,5 +1,5 @@
 import 'package:final_project/core/theming/colors.dart';
-import 'package:final_project/models/famous_person_model.dart';
+import 'package:final_project/apis/models/famous_person_model.dart';
 import 'package:flutter/material.dart';
 
 class PersonDetailsScreen extends StatelessWidget {
