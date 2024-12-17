@@ -91,13 +91,11 @@ README.md                 # Project documentation
  <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/onboarding%203.png" width="200" />
 </p>
 
-### 3. Auth
+### 3. Home 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/041b708b-b0d1-4283-968a-4bc33c29d166" width="200" />
- <img src="https://github.com/user-attachments/assets/51d4a847-cd94-4064-a062-27501dbb8c21" width="200" />
- <img src="https://github.com/user-attachments/assets/d258d8e3-d8b7-415a-9bb5-879c9709fe77" width="200" />
- <img src="https://github.com/user-attachments/assets/0b5da39b-eb77-4af3-96da-f401ea77405e" width="200" />
- <img src="https://github.com/user-attachments/assets/020f66d6-7424-465f-b0ee-7f0e1eec3362" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/home.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/search.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/person_info.png" width="200" />
 </p>
 
 
