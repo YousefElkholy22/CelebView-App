@@ -18,12 +18,18 @@
 CelebView is a Flutter-based mobile application that provides users with a smooth and intuitive way to explore celebrity profiles and their notable works. The app is user-friendly, responsive, and packed with essential features for a seamless browsing experience.
 
 ## 🔥Features
- User Features
-🌟 Celebrity Profiles: View detailed information about celebrities and their most famous works.
-🔍 Search Functionality: Quickly search for celebrities by name.
-❤ Favorites: Mark celebrities as favorites to revisit their profiles easily.
-🎬 Smooth Navigation: Enjoy a seamless user experience with clean UI transitions.
-📱 Responsive Design: The app adjusts flawlessly across devices of all sizes.
+### User Features
+#### 🌟 Celebrity Profiles:
+- View detailed information about celebrities and their most famous works.
+#### 🔍 Search Functionality:
+- Quickly search for celebrities by name.
+#### ❤ Favorites:
+- Mark celebrities as favorites to revisit their profiles easily.
+####
+🎬 Smooth Navigation:
+- Enjoy a seamless user experience with clean UI transitions.
+####📱 Responsive Design:
+- The app adjusts flawlessly across devices of all sizes.
 
 
 
