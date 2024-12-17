@@ -1,4 +1,4 @@
-# 🥇 Evnto
+# 🥇 CelebView 
 
 ## 📊 Table of Contents
 
@@ -15,142 +15,61 @@
 
 ## 👌 Overview
 
-The "EVNTO" application was conceptualized to address the growing need for a centralized
-platform at Mansoura University, where students can easily book and follow activities organized by
-various volunteer teams. This report summarizes the key findings from research conducted on
-competitive applications and a survey among students, and it presents actionable recommendations
-for the development of the EVNTO application.
+CelebView is a Flutter-based mobile application that provides users with a smooth and intuitive way to explore celebrity profiles and their notable works. The app is user-friendly, responsive, and packed with essential features for a seamless browsing experience.
 
-## 🔥 Features
-### 1. User Features
+🔥 Features
+User Features
+🌟 Celebrity Profiles: View detailed information about celebrities and their most famous works.
+🔍 Search Functionality: Quickly search for celebrities by name.
+❤ Favorites: Mark celebrities as favorites to revisit their profiles easily.
+🎬 Smooth Navigation: Enjoy a seamless user experience with clean UI transitions.
+📱 Responsive Design: The app adjusts flawlessly across devices of all sizes.
 
-#### 1.1 Email and Password Registration
-- Description: Allows users to register using their email and password.
-- Sub-Features:
-  - Email Verification: A confirmation email is sent to verify the user's identity.
-  - Password Strength Meter: Displays a visual meter indicating the strength of the password during creation.
-  - Forgot Password: Provides an option for users to reset their password via email.
-  - Social Media Registration: Users can register or log in using their social media accounts (e.g., Facebook, Google).
-
-#### 1.2 Event Listings
-- Description: Displays a comprehensive list of upcoming events, sessions, or workshops organized by volunteer teams or mentors.
-
-#### 1.3 Event Listings Filtration
-- Description: A categorized list of events based on:
-  - Free or Paid
-  - College
-
-#### 1.4 Event Listings Search
-- Description: Offers a robust search function allowing users to search for events based on criteria such as:
-  - Date: Filter events by specific dates or date ranges.
-  - College: Filter events by the organizing college.
-  - Event Type: Filter by the type of event (e.g., workshop, seminar).
-  - Team Name: Filter events organized by specific volunteer teams.
-
-#### 1.5 Event Details
-- Description: Provides detailed information about each event, including:
-  - Date and Time: When the event will take place.
-  - Location: Where the event will be held, with possible integration with maps for directions.
-  - Description: A brief overview of what the event entails.
-  - Ticket Availability: Information on whether tickets are required and their availability.
-
-#### 1.6 Ticket Booking
-- Description: Allows users to book tickets for events directly through the app, with options for selecting the number of tickets and payment (if applicable).
-
-#### 1.7 Push Notifications & Reminders
-- Description: Sends real-time updates and reminders about upcoming events, changes in event details, or important alerts to users.
-
-#### 1.8 Feedback and Ratings
-- Description: Enables attendees to leave feedback and rate events they have attended. This feedback helps event organizers improve future events.
-
-#### 1.9 Social Media Sharing
-- Description: Allows users to share event details directly to social media platforms, promoting the event and driving more ticket sales.
-
-#### 1.10 Event Discovery Map
-- Description: Provides a map view where users can discover events happening near them or at specific locations, with filters for event types or dates.
-
-#### 1.11 User Profiles
-- Description: Users can create and customize their profiles, including:
-  - Interests: Users can list their interests, which helps the recommendation system provide personalized suggestions.
-  - Skills: Users can add their skills, relevant to volunteering or participation in events.
-  - Involvement History: A record of past events attended, helping users keep track of their participation.
-
-#### 1.12 Favorites and Savings
-- Description: Allows users to save their favorite teams and receive updates on their latest events.
-
-#### 1.13 Calendar Integration
-- Description: Users can add events to their personal calendars directly from the app, helping them stay organized.
-
----
-
-### 2. AI Features for User
-
-#### 2.1 Generative Chatbot
-- Description: An NLP-powered chatbot that can answer questions about teams, events, and volunteering opportunities.
-  - Contextual Understanding: The chatbot is designed to understand the context of conversations to provide accurate and helpful responses.
-
-#### 2.2 Personalized Event Recommendations
-- Description: The AI recommends events based on users’ interests, faculties, and past attendance.
-  - Filters and Categories: Users can filter recommended events by faculty, date, type of event, or volunteer team.
-
----
-
-### 3. Admin Features (Volunteering Teams, Mentors & Sponsors)
-
-#### 3.1 Admin Registration
-- Description: Admins can register through the dashboard and create profiles indicating their details.
-  - Volunteering Team: They can add their mission, activities, achievements, interests, and contact information.
-  - Mentor: 
-    - Ability to add detailed personal and professional information, highlighting guidance they can offer.
-    - Option to select their preferred engagement duration with the platform, either monthly, semi-annual, or annual commitments.
-  - Sponsors: 
-    - They can create profiles that include their company information, sponsorship interests, and the types of events or teams they are interested in supporting.
-    - Option to select their preferred engagement duration with the platform, either monthly, semi-annual, or annual commitments.
-
-#### 3.2 Managing Events, Sessions, or Workshops Details
-- Description: Admins (Teams and Mentors only) can add, edit, and manage events, sessions, or workshops through the dashboard.
-  - Overview: Admins can provide detailed descriptions, goals, content, speakers, and dates for their events.
-  - Attendance Tracking: Teams can track how many students have registered to attend their events.
-
-#### 3.3 Analytics and Insights
-- Description: Provides admins with insights into event attendance, engagement, and feedback. This helps in data-driven decision-making and improving future events.
 
 
 ## 🏗️ Project Architecture
 
 ```
+
 lib/
+├── api/
+│   └── models/           # Classes and models for API data
+│
 ├── core/
-│   ├── configs/
-│   ├── constants/
-│   ├── helpers/
-│   │   ├── cache/ 
-│   │   ├── enums/ 
-│   │   ├── env/ 
-│   │   ├── extensions/ 
-│   │   ├── functions/ 
-│   │   ├── observers/ 
-│   │   └── utils/
-│   ├── network/
-│   ├── router/
-│   ├── service_locator/
-│   ├── styles/
-│   └── widgets/
-│ 
-├── features/
-│   ├── feature1/
-│   └── feature2/
-│       ├── bloc/ 
-│       ├── data/ 
-│       │   ├── models/ 
-│       │   │   ├── Entites/ 
-│       │   │   └── DTOs/
-│       │   └── repos/
-│       └── view/
-│           ├── components/ 
-│           └── pages/
-pubspec.yaml
-README.md
+│   ├── helper/           # Helper utilities and functions
+│   └── theming/          # App-wide themes and styles
+│
+├── feature/
+│   ├── favorites/        # Favorites feature
+│   │   ├── screens/      # Screens for Favorites UI
+│   │   └── widgets/      # UI components for Favorites
+│   │
+│   ├── home/             # Home feature
+│   │   ├── screens/      # UI screens for Home
+│   │   └── widgets/      # Components for Home screens
+│   │
+│   ├── movie/            # Movies feature
+│   │   ├── screens/      # UI screens for Movie details
+│   │   └── widgets/      # UI components for Movie screens
+│   │
+│   ├── onboarding/       # Onboarding feature
+│   │   ├── data/         # Onboarding data sources
+│   │   ├── screens/      # Onboarding UI screens
+│   │   └── widgets/      # Widgets for Onboarding
+│   │
+│   └── person/           # Person feature
+│       ├── screens/      # Screens related to person details
+│       └── widgets/      # UI components for Person
+│
+├── linux/                # Linux platform support
+├── macos/                # macOS platform support
+├── web/                  # Web platform support
+├── windows/              # Windows platform support
+│
+pubspec.yaml              # Project dependencies
+README.md                 # Project documentation
+.gitignore                # Git ignored files
+
 ```
 
 
