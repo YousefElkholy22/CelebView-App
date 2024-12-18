@@ -6,12 +6,9 @@
 2. [Features](#Features)
 3. [Project Architecture](#project-architecture)
 4. [UI Screens](#ui-screens)
-5. [Demo](#demo)
-6. [Contributing](#Contributing)
-7. [Running the App](#Running-the-App)
-8. [Running Tests](#Running-Tests)
-7. [License](#License)
-8. [Contact](#Contact)
+5. [Running the App](#Running-the-App)
+6. [Running Tests](#Running-Tests)
+7. [Contact](#Contact)
 
 ## 👌 Overview
 
