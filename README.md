@@ -99,14 +99,15 @@ README.md                 # Project documentation
 </p>
 
 
-### 6. Favorites
-<p align="center">
- <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
-</p>
-
-### 6. Person Work
+### 4. Person Work
 <p align="center">
  <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/person_work.png" width="200" />
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/works.png" width="200" />
+</p>
+
+### 5. Favorites
+<p align="center">
+ <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
 </p>
   
 ## ✔️ Demo
