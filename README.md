@@ -109,22 +109,6 @@ README.md                 # Project documentation
 <p align="center">
  <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
 </p>
-  
-## ✔️ Demo
-<div align="center">
-  <video src=https://github.com/user-attachments/assets/f7a3e789-eb43-49d3-b3a5-440e5ee685f8 width="200" />
-</div>
-
-
-## ⛑️ Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
 
 ## 🚀 Running the App
 
@@ -185,12 +169,8 @@ flutter test
 ```
 
 
-## 📁 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ▶️ Contact
 
 If you have any questions, feel free to contact us:
 
-Email: ahmed.arafat3535@gmail.com
+Email: elkkholyyoussif@gmail.com
