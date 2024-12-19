@@ -124,8 +124,8 @@ Run the following command:
 1. Clone the repository
 
 ```sh
-git clone https://github.com/swarmsTeam/swarms-mobile.git
-cd swarms-mobile
+git clone https://github.com/YousefElkholy22/CelebView-App.git
+cd CelebView-App
 ```
 
 2. Install dependencies:
