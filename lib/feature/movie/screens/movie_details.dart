@@ -1,5 +1,8 @@
 import 'package:final_project/core/theming/colors.dart';
 import 'package:final_project/apis/models/famous_person_model.dart';
+import 'package:final_project/feature/movie/widget/favorite_button.dart';
+import 'package:final_project/feature/movie/widget/movie_images_carousel.dart';
+import 'package:final_project/feature/movie/widget/movie_overview_section.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailsScreen extends StatelessWidget {
@@ -14,7 +17,7 @@ class MovieDetailsScreen extends StatelessWidget {
     final images = [
       work.backdropPath,
       work.posterPath,
-    ].where((path) => path != null).toList();
+    ].where((path) => path != null).cast<String>().toList();
 
     return Scaffold(
       backgroundColor: lightBackground,
@@ -23,7 +26,7 @@ class MovieDetailsScreen extends StatelessWidget {
         backgroundColor: lightBackground,
         title: Text(
           work.title ?? work.originalTitle ?? 'Unknown',
-          style: const TextStyle(color: mediumBlue, fontSize: 17,fontWeight: FontWeight.bold),
+          style: const TextStyle(color: mediumBlue, fontSize: 17, fontWeight: FontWeight.bold),
         ),
       ),
       body: Padding(
@@ -31,36 +34,8 @@ class MovieDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (images.isNotEmpty)
-              SizedBox(
-                height: 200,
-                child: PageView.builder(
-                  itemCount: images.length,
-                  itemBuilder: (context, index) {
-                    return ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.network(
-                        'https://image.tmdb.org/t/p/w500${images[index]}',
-                        fit: BoxFit.cover,
-                        width: double.infinity,
-                        errorBuilder: (context, error, stackTrace) =>
-                            const Icon(Icons.broken_image, size: 50),
-                      ),
-                    );
-                  },
-                ),
-              )
-            else
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Container(
-                  height: 200,
-                  color: Colors.grey[700],
-                  child: const Center(
-                    child: Icon(Icons.broken_image, size: 50, color: Colors.grey),
-                  ),
-                ),
-              ),
+            // Images Carousel
+            MovieImagesCarousel(images: images),
 
             const SizedBox(height: 16),
 
@@ -92,59 +67,27 @@ class MovieDetailsScreen extends StatelessWidget {
             ),
 
             const SizedBox(height: 20),
-            const Text(
-              'Overview',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: mediumBlue,
-              ),
-            ),
 
-            const SizedBox(height: 8),
-
-            // Overview Text
-            Expanded(
-              child: SingleChildScrollView(
-                child: Text(
-                  work.overview ?? 'No description available.',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: mediumBlue,
-                    height: 1.5,
-                  ),
-                ),
-              ),
-            ),
+            // Overview Section
+            MovieOverviewSection(overview: work.overview),
 
             const SizedBox(height: 16),
 
             // Favorite Button
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  if (!favoriteMovies.contains(work)) {
-                    favoriteMovies.add(work);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Added to Favorites!')),
-                    );
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Already in Favorites!')),
-                    );
-                  }
-                },
-                icon: const Icon(Icons.favorite, color: Colors.red),
-                label: const Text('Add to Favorites',style: TextStyle(color: Colors.white),),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: mediumBlue,
-                  minimumSize: const Size(double.infinity, 50),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              ),
+            FavoriteButton(
+              work: work,
+              onAddToFavorites: () {
+                if (!favoriteMovies.contains(work)) {
+                  favoriteMovies.add(work);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Added to Favorites!')),
+                  );
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Already in Favorites!')),
+                  );
+                }
+              },
             ),
           ],
         ),
