@@ -6,12 +6,9 @@
 2. [Features](#Features)
 3. [Project Architecture](#project-architecture)
 4. [UI Screens](#ui-screens)
-5. [Demo](#demo)
-6. [Contributing](#Contributing)
-7. [Running the App](#Running-the-App)
-8. [Running Tests](#Running-Tests)
-7. [License](#License)
-8. [Contact](#Contact)
+5. [Running the App](#Running-the-App)
+6. [Running Tests](#Running-Tests)
+7. [Contact](#Contact)
 
 ## 👌 Overview
 
@@ -109,22 +106,6 @@ README.md                 # Project documentation
 <p align="center">
  <img src="https://github.com/YousefElkholy22/CelebView-App/blob/main/assets/screens/favorites.png" width="200" />
 </p>
-  
-## ✔️ Demo
-<div align="center">
-  <video src=https://github.com/user-attachments/assets/f7a3e789-eb43-49d3-b3a5-440e5ee685f8 width="200" />
-</div>
-
-
-## ⛑️ Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
 
 ## 🚀 Running the App
 
@@ -143,8 +124,8 @@ Run the following command:
 1. Clone the repository
 
 ```sh
-git clone https://github.com/swarmsTeam/swarms-mobile.git
-cd swarms-mobile
+git clone https://github.com/YousefElkholy22/CelebView-App.git
+cd CelebView-App
 ```
 
 2. Install dependencies:
@@ -168,8 +149,8 @@ How to run the unit tests
 1. Clone the repository
 
 ```sh
-git clone https://github.com/swarmsTeam/swarms-mobile.git
-cd swarms-mobile
+git clone https://github.com/YousefElkholy22/CelebView-App.git
+cd CelebView-App
 ```
 
 2. Install dependencies:
@@ -185,12 +166,8 @@ flutter test
 ```
 
 
-## 📁 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ▶️ Contact
 
 If you have any questions, feel free to contact us:
 
-Email: ahmed.arafat3535@gmail.com
+Email: elkkholyyoussif@gmail.com
